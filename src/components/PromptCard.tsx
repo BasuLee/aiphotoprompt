@@ -30,14 +30,14 @@ export function PromptCard({ prompt }: PromptCardProps) {
     <div className="group bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:border-gray-200 transition-all duration-300 transform hover:-translate-y-1">
       {/* 图片显示区域 */}
       {prompt.outputImages && prompt.outputImages.length > 0 && (
-        <Link href={detailHref} className="relative block h-56 w-full overflow-hidden">
+        <Link href={detailHref} className="relative block h-56 w-full overflow-hidden bg-gray-50">
           <ImageDisplay
             images={[{
               ...prompt.outputImages[0],
               alt: generateImageAlt()
             }]}
             variant="card"
-            className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300"
+            className="h-full w-full object-contain group-hover:scale-105 transition-transform duration-300"
             showFirst={true}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>

@@ -53,7 +53,7 @@ export function filterPrompts(
           return a.model.localeCompare(b.model);
         case 'id':
         default:
-          return a.caseNumber - b.caseNumber;
+          return b.caseNumber - a.caseNumber; // 倒序排列，最新的在前面
       }
     });
   }

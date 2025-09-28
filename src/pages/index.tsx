@@ -65,95 +65,70 @@ export default function Home({ prompts, categories }: HomeProps) {
       />
 
       <div className="bg-gradient-to-br from-gray-50 via-white to-gray-100">        
-        <div className="max-w-[2000px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="max-w-[2000px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
           {/* Hero Section */}
-          <div className="mb-12 text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <div className="mb-8 text-center">
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               {t('home.title')}
             </h1>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-base text-gray-600 max-w-2xl mx-auto">
               {t('home.subtitle')}
             </p>
           </div>
 
           {/* Error State */}
           {error && (
-            <div className="mb-8 p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg">
+            <div className="mb-6 p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg">
               {error}
             </div>
           )}
 
-          {/* Main Content Layout */}
-          <div className="flex flex-col xl:flex-row gap-8">
-            {/* Sidebar Filters - Hidden on mobile, shown in sidebar on xl+ */}
-            <div className="hidden xl:block xl:w-80 xl:flex-shrink-0">
-              <div className="sticky top-8">
-                <SearchFilters
-                  searchTerm={searchTerm}
-                  onSearchChange={setSearchTerm}
-                  categories={categories}
-                  selectedCategories={selectedCategories}
-                  onCategoryToggle={handleCategoryToggle}
-                  sortBy={sortBy}
-                  onSortChange={setSortBy}
-                />
-              </div>
-            </div>
+          {/* Search and Filter Section - Centered */}
+          <div className="mb-6 max-w-4xl mx-auto">
+            <SearchFilters
+              searchTerm={searchTerm}
+              onSearchChange={setSearchTerm}
+              categories={categories}
+              selectedCategories={selectedCategories}
+              onCategoryToggle={handleCategoryToggle}
+              sortBy={sortBy}
+              onSortChange={setSortBy}
+            />
+          </div>
 
-            {/* Mobile Filters - Shown on mobile/tablet, hidden on xl+ */}
-            <div className="xl:hidden mb-6">
-              <SearchFilters
-                searchTerm={searchTerm}
-                onSearchChange={setSearchTerm}
-                categories={categories}
-                selectedCategories={selectedCategories}
-                onCategoryToggle={handleCategoryToggle}
-                sortBy={sortBy}
-                onSortChange={setSortBy}
-              />
-            </div>
-            
-            {/* Content Area */}
-            <div className="flex-1 min-w-0">
-              {/* Results Count */}
-              <div className="mb-6 flex justify-between items-center">
-                <p className="text-gray-600 text-lg">
-                  {t('home.promptsFound', { count: filteredPrompts.length })}
+          {/* Content Area */}
+          <div className="max-w-[2000px] mx-auto">
+            {/* Loading State */}
+            {isLoading && (
+              <div className="text-center py-12">
+                <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
+                <p className="mt-4 text-gray-500">
+                  {t('home.loading')}
                 </p>
               </div>
-              
-              {/* Loading State */}
-              {isLoading && (
-                <div className="text-center py-12">
-                  <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
-                  <p className="mt-4 text-gray-500">
-                    {t('home.loading')}
-                  </p>
-                </div>
-              )}
-              
-              {/* Grid Layout - Responsive columns */}
-              {!isLoading && (
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-8">
-                  {filteredPrompts.map((prompt) => (
-                    <PromptCard key={prompt.id} prompt={prompt} />
-                  ))}
-                </div>
-              )}
-              
-              {/* Empty State */}
-              {!isLoading && filteredPrompts.length === 0 && (
-                <div className="text-center py-16">
-                  <div className="text-6xl mb-4">🔍</div>
-                  <h3 className="text-xl font-semibold text-gray-700 mb-2">
-                    {t('home.noPromptsFound')}
-                  </h3>
-                  <p className="text-gray-500 max-w-md mx-auto">
-                    {t('home.noPromptsDesc')}
-                  </p>
-                </div>
-              )}
-            </div>
+            )}
+            
+            {/* Grid Layout - Responsive columns */}
+            {!isLoading && (
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-8">
+                {filteredPrompts.map((prompt) => (
+                  <PromptCard key={prompt.id} prompt={prompt} />
+                ))}
+              </div>
+            )}
+            
+            {/* Empty State */}
+            {!isLoading && filteredPrompts.length === 0 && (
+              <div className="text-center py-16">
+                <div className="text-6xl mb-4">🔍</div>
+                <h3 className="text-xl font-semibold text-gray-700 mb-2">
+                  {t('home.noPromptsFound')}
+                </h3>
+                <p className="text-gray-500 max-w-md mx-auto">
+                  {t('home.noPromptsDesc')}
+                </p>
+              </div>
+            )}
           </div>
         </div>
       </div>

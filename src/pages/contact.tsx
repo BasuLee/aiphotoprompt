@@ -167,7 +167,7 @@ export default function Contact() {
                         {t('contact.email')}
                       </h3>
                       <p className="text-sm text-gray-600">
-                        contact@aiphotoprompts.com
+                        firenull52@gmail.com
                       </p>
                     </div>
                   </div>

@@ -17,13 +17,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case1/input0.jpg",
-        "alt": "AI image prompt – Illustration to Figure input reference"
+        "alt": "AI photo prompt – Illustration to Figure input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case1/output0.jpg",
-        "alt": "AI image prompt – Illustration to Figure output image"
+        "alt": "AI photo prompt – Illustration to Figure output image"
       }
     ]
   },
@@ -45,29 +45,29 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case2/input.jpg",
-        "alt": "AI image prompt – Generate Ground View from Map Arrow input reference"
+        "alt": "AI photo prompt – Generate Ground View from Map Arrow input reference"
       },
       {
         "src": "/assets/nano-banana/case2/input3.jpg",
-        "alt": "AI image prompt – Generate Ground View from Map Arrow 2 input reference"
+        "alt": "AI photo prompt – Generate Ground View from Map Arrow 2 input reference"
       },
       {
         "src": "/assets/nano-banana/case2/input2.jpg",
-        "alt": "AI image prompt – Generate Ground View from Map Arrow 3 input reference"
+        "alt": "AI photo prompt – Generate Ground View from Map Arrow 3 input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case2/output.jpg",
-        "alt": "AI image prompt – Generate Ground View from Map Arrow output image"
+        "alt": "AI photo prompt – Generate Ground View from Map Arrow output image"
       },
       {
         "src": "/assets/nano-banana/case2/output3.jpg",
-        "alt": "AI image prompt – Generate Ground View from Map Arrow 2 output image"
+        "alt": "AI photo prompt – Generate Ground View from Map Arrow 2 output image"
       },
       {
         "src": "/assets/nano-banana/case2/output2.jpg",
-        "alt": "AI image prompt – Generate Ground View from Map Arrow 3 output image"
+        "alt": "AI photo prompt – Generate Ground View from Map Arrow 3 output image"
       }
     ]
   },
@@ -92,7 +92,7 @@
     "outputImages": [
       {
         "src": "/assets/nano-banana/case3/output.jpg",
-        "alt": "AI image prompt – Real World AR Information output image"
+        "alt": "AI photo prompt – Real World AR Information output image"
       }
     ]
   },
@@ -116,21 +116,21 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case4/input.jpg",
-        "alt": "AI image prompt – Extract 3D Buildings/Make Isometric Models input reference"
+        "alt": "AI photo prompt – Extract 3D Buildings/Make Isometric Models input reference"
       },
       {
         "src": "/assets/nano-banana/case4/input2.jpg",
-        "alt": "AI image prompt – Extract 3D Buildings/Make Isometric Models 2 input reference"
+        "alt": "AI photo prompt – Extract 3D Buildings/Make Isometric Models 2 input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case4/output.jpg",
-        "alt": "AI image prompt – Extract 3D Buildings/Make Isometric Models output image"
+        "alt": "AI photo prompt – Extract 3D Buildings/Make Isometric Models output image"
       },
       {
         "src": "/assets/nano-banana/case4/output2.jpg",
-        "alt": "AI image prompt – Extract 3D Buildings/Make Isometric Models 2 output image"
+        "alt": "AI photo prompt – Extract 3D Buildings/Make Isometric Models 2 output image"
       }
     ]
   },
@@ -154,13 +154,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case5/input.jpg",
-        "alt": "AI image prompt – Photos of Yourself in Different Eras input reference"
+        "alt": "AI photo prompt – Photos of Yourself in Different Eras input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case5/output.jpg",
-        "alt": "AI image prompt – Photos of Yourself in Different Eras output image"
+        "alt": "AI photo prompt – Photos of Yourself in Different Eras output image"
       }
     ]
   },
@@ -184,13 +184,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case6/input.jpg",
-        "alt": "AI image prompt – Multi-Reference Image Generation input reference"
+        "alt": "AI photo prompt – Multi-Reference Image Generation input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case6/output.jpg",
-        "alt": "AI image prompt – Multi-Reference Image Generation output image"
+        "alt": "AI photo prompt – Multi-Reference Image Generation output image"
       }
     ]
   },
@@ -212,13 +212,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case7/input.jpg",
-        "alt": "AI image prompt – Automatic Photo Editing input reference"
+        "alt": "AI photo prompt – Automatic Photo Editing input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case7/output.jpg",
-        "alt": "AI image prompt – Automatic Photo Editing output image"
+        "alt": "AI photo prompt – Automatic Photo Editing output image"
       }
     ]
   },
@@ -240,13 +240,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case8/input.jpg",
-        "alt": "AI image prompt – Hand Drawing Controls Multi-Character Poses input reference"
+        "alt": "AI photo prompt – Hand Drawing Controls Multi-Character Poses input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case8/output.jpg",
-        "alt": "AI image prompt – Hand Drawing Controls Multi-Character Poses output image"
+        "alt": "AI photo prompt – Hand Drawing Controls Multi-Character Poses output image"
       }
     ]
   },
@@ -268,13 +268,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case9/input.jpg",
-        "alt": "AI image prompt – Cross-View Image Generation input reference"
+        "alt": "AI photo prompt – Cross-View Image Generation input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case9/output.jpg",
-        "alt": "AI image prompt – Cross-View Image Generation output image"
+        "alt": "AI photo prompt – Cross-View Image Generation output image"
       }
     ]
   },
@@ -296,13 +296,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case10/input.jpg",
-        "alt": "AI image prompt – Custom Character Stickers input reference"
+        "alt": "AI photo prompt – Custom Character Stickers input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case10/output.jpg",
-        "alt": "AI image prompt – Custom Character Stickers output image"
+        "alt": "AI photo prompt – Custom Character Stickers output image"
       }
     ]
   },
@@ -324,13 +324,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case11/input.jpg",
-        "alt": "AI image prompt – Anime to Real Coser input reference"
+        "alt": "AI photo prompt – Anime to Real Coser input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case11/output.jpg",
-        "alt": "AI image prompt – Anime to Real Coser output image"
+        "alt": "AI photo prompt – Anime to Real Coser output image"
       }
     ]
   },
@@ -352,13 +352,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case12/input.jpg",
-        "alt": "AI image prompt – Generate Character Design input reference"
+        "alt": "AI photo prompt – Generate Character Design input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case12/output.jpg",
-        "alt": "AI image prompt – Generate Character Design output image"
+        "alt": "AI photo prompt – Generate Character Design output image"
       }
     ]
   },
@@ -380,13 +380,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case13/input.jpg",
-        "alt": "AI image prompt – Color Line Art with Color Palette input reference"
+        "alt": "AI photo prompt – Color Line Art with Color Palette input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case13/output.jpg",
-        "alt": "AI image prompt – Color Line Art with Color Palette output image"
+        "alt": "AI photo prompt – Color Line Art with Color Palette output image"
       }
     ]
   },
@@ -409,7 +409,7 @@
     "outputImages": [
       {
         "src": "/assets/nano-banana/case14/output.jpg",
-        "alt": "AI image prompt – Article Infographic output image"
+        "alt": "AI photo prompt – Article Infographic output image"
       }
     ]
   },
@@ -432,7 +432,7 @@
     "outputImages": [
       {
         "src": "/assets/nano-banana/case15/output.jpg",
-        "alt": "AI image prompt – Change Multiple Hairstyles output image"
+        "alt": "AI photo prompt – Change Multiple Hairstyles output image"
       }
     ]
   },
@@ -458,7 +458,7 @@
     "outputImages": [
       {
         "src": "/assets/nano-banana/case16/output.jpg",
-        "alt": "AI image prompt – Model Annotation Explanation Diagram output image"
+        "alt": "AI photo prompt – Model Annotation Explanation Diagram output image"
       }
     ]
   },
@@ -481,7 +481,7 @@
     "outputImages": [
       {
         "src": "/assets/nano-banana/case17/output.jpg",
-        "alt": "AI image prompt – Custom Marble Sculpture output image"
+        "alt": "AI photo prompt – Custom Marble Sculpture output image"
       }
     ]
   },
@@ -503,29 +503,29 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case18/input1.jpg",
-        "alt": "AI image prompt – Cook Based on Ingredients input reference"
+        "alt": "AI photo prompt – Cook Based on Ingredients input reference"
       },
       {
         "src": "/assets/nano-banana/case18/input2.jpg",
-        "alt": "AI image prompt – Cook Based on Ingredients 2 input reference"
+        "alt": "AI photo prompt – Cook Based on Ingredients 2 input reference"
       },
       {
         "src": "/assets/nano-banana/case18/input3.jpg",
-        "alt": "AI image prompt – Cook Based on Ingredients 3 input reference"
+        "alt": "AI photo prompt – Cook Based on Ingredients 3 input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case18/output1.jpg",
-        "alt": "AI image prompt – Cook Based on Ingredients output image"
+        "alt": "AI photo prompt – Cook Based on Ingredients output image"
       },
       {
         "src": "/assets/nano-banana/case18/output2.jpg",
-        "alt": "AI image prompt – Cook Based on Ingredients 2 output image"
+        "alt": "AI photo prompt – Cook Based on Ingredients 2 output image"
       },
       {
         "src": "/assets/nano-banana/case18/output3.jpg",
-        "alt": "AI image prompt – Cook Based on Ingredients 3 output image"
+        "alt": "AI photo prompt – Cook Based on Ingredients 3 output image"
       }
     ]
   },
@@ -547,13 +547,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case19/input.jpg",
-        "alt": "AI image prompt – Math Problem Reasoning input reference"
+        "alt": "AI photo prompt – Math Problem Reasoning input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case19/output.jpg",
-        "alt": "AI image prompt – Math Problem Reasoning output image"
+        "alt": "AI photo prompt – Math Problem Reasoning output image"
       }
     ]
   },
@@ -575,13 +575,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case20/input.jpg",
-        "alt": "AI image prompt – Old Photo Colorization input reference"
+        "alt": "AI photo prompt – Old Photo Colorization input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case20/output.jpg",
-        "alt": "AI image prompt – Old Photo Colorization output image"
+        "alt": "AI photo prompt – Old Photo Colorization output image"
       }
     ]
   },
@@ -603,13 +603,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case21/input.jpg",
-        "alt": "AI image prompt – OOTD Outfit input reference"
+        "alt": "AI photo prompt – OOTD Outfit input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case21/output.jpg",
-        "alt": "AI image prompt – OOTD Outfit output image"
+        "alt": "AI photo prompt – OOTD Outfit output image"
       }
     ]
   },
@@ -631,13 +631,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case22/input.jpg",
-        "alt": "AI image prompt – Character Clothing Change input reference"
+        "alt": "AI photo prompt – Character Clothing Change input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case22/output.jpg",
-        "alt": "AI image prompt – Character Clothing Change output image"
+        "alt": "AI photo prompt – Character Clothing Change output image"
       }
     ]
   },
@@ -659,13 +659,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case23/input.jpg",
-        "alt": "AI image prompt – Multi-View Result Generation input reference"
+        "alt": "AI photo prompt – Multi-View Result Generation input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case23/output.jpg",
-        "alt": "AI image prompt – Multi-View Result Generation output image"
+        "alt": "AI photo prompt – Multi-View Result Generation output image"
       }
     ]
   },
@@ -683,13 +683,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case24/input.jpg",
-        "alt": "AI image prompt – Movie Storyboard(by [@GeminiApp](@GeminiApp)) input reference"
+        "alt": "AI photo prompt – Movie Storyboard(by [@GeminiApp](@GeminiApp)) input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case24/output.jpg",
-        "alt": "AI image prompt – Movie Storyboard(by [@GeminiApp](@GeminiApp)) output image"
+        "alt": "AI photo prompt – Movie Storyboard(by [@GeminiApp](@GeminiApp)) output image"
       }
     ]
   },
@@ -711,13 +711,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case25/input.jpg",
-        "alt": "AI image prompt – Character Pose Modification input reference"
+        "alt": "AI photo prompt – Character Pose Modification input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case25/output.jpg",
-        "alt": "AI image prompt – Character Pose Modification output image"
+        "alt": "AI photo prompt – Character Pose Modification output image"
       }
     ]
   },
@@ -739,13 +739,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case26/input.jpg",
-        "alt": "AI image prompt – Generate image from line drawing input reference"
+        "alt": "AI photo prompt – Generate image from line drawing input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case26/output.jpg",
-        "alt": "AI image prompt – Generate image from line drawing output image"
+        "alt": "AI photo prompt – Generate image from line drawing output image"
       }
     ]
   },
@@ -767,13 +767,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case27/input.jpg",
-        "alt": "AI image prompt – Add Watermark to Image input reference"
+        "alt": "AI photo prompt – Add Watermark to Image input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case27/output.jpg",
-        "alt": "AI image prompt – Add Watermark to Image output image"
+        "alt": "AI photo prompt – Add Watermark to Image output image"
       }
     ]
   },
@@ -796,11 +796,11 @@
     "outputImages": [
       {
         "src": "/assets/nano-banana/case28/output.jpg",
-        "alt": "AI image prompt – Knowledge Reasoning Image Generation output image"
+        "alt": "AI photo prompt – Knowledge Reasoning Image Generation output image"
       },
       {
         "src": "/assets/nano-banana/case28/output1.jpg",
-        "alt": "AI image prompt – Knowledge Reasoning Image Generation 2 output image"
+        "alt": "AI photo prompt – Knowledge Reasoning Image Generation 2 output image"
       }
     ]
   },
@@ -822,13 +822,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case29/input.jpg",
-        "alt": "AI image prompt – Red Pen Annotations input reference"
+        "alt": "AI photo prompt – Red Pen Annotations input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case29/output.jpg",
-        "alt": "AI image prompt – Red Pen Annotations output image"
+        "alt": "AI photo prompt – Red Pen Annotations output image"
       }
     ]
   },
@@ -851,11 +851,11 @@
     "outputImages": [
       {
         "src": "/assets/nano-banana/case30/output.jpg",
-        "alt": "AI image prompt – Explosive Food output image"
+        "alt": "AI photo prompt – Explosive Food output image"
       },
       {
         "src": "/assets/nano-banana/case30/output1.jpg",
-        "alt": "AI image prompt – Explosive Food 2 output image"
+        "alt": "AI photo prompt – Explosive Food 2 output image"
       }
     ]
   },
@@ -877,13 +877,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case31/input.jpg",
-        "alt": "AI image prompt – Create Comic Book input reference"
+        "alt": "AI photo prompt – Create Comic Book input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case31/output.jpg",
-        "alt": "AI image prompt – Create Comic Book output image"
+        "alt": "AI photo prompt – Create Comic Book output image"
       }
     ]
   },
@@ -907,13 +907,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case32/input.jpg",
-        "alt": "AI image prompt – Action Figure input reference"
+        "alt": "AI photo prompt – Action Figure input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case32/output.jpg",
-        "alt": "AI image prompt – Action Figure output image"
+        "alt": "AI photo prompt – Action Figure output image"
       }
     ]
   },
@@ -935,13 +935,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case33/input.jpg",
-        "alt": "AI image prompt – Map to Isometric Buildings input reference"
+        "alt": "AI photo prompt – Map to Isometric Buildings input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case33/output.jpg",
-        "alt": "AI image prompt – Map to Isometric Buildings output image"
+        "alt": "AI photo prompt – Map to Isometric Buildings output image"
       }
     ]
   },
@@ -1017,13 +1017,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case37/input.jpg",
-        "alt": "AI image prompt – Makeup Analysis input reference"
+        "alt": "AI photo prompt – Makeup Analysis input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case37/output.jpg",
-        "alt": "AI image prompt – Makeup Analysis output image"
+        "alt": "AI photo prompt – Makeup Analysis output image"
       }
     ]
   },
@@ -1048,7 +1048,7 @@
     "outputImages": [
       {
         "src": "/assets/nano-banana/case38/output.jpg",
-        "alt": "AI image prompt – Google Maps View of Middle-earth output image"
+        "alt": "AI photo prompt – Google Maps View of Middle-earth output image"
       }
     ]
   },
@@ -1073,7 +1073,7 @@
     "outputImages": [
       {
         "src": "/assets/nano-banana/case39/output.jpg",
-        "alt": "AI image prompt – Typographic Illustration Generation output image"
+        "alt": "AI photo prompt – Typographic Illustration Generation output image"
       }
     ]
   },
@@ -1187,13 +1187,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case45/input.jpg",
-        "alt": "AI image prompt – LEGO Minifigure input reference"
+        "alt": "AI photo prompt – LEGO Minifigure input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case45/output.jpg",
-        "alt": "AI image prompt – LEGO Minifigure output image"
+        "alt": "AI photo prompt – LEGO Minifigure output image"
       }
     ]
   },
@@ -1215,13 +1215,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case46/input.jpg",
-        "alt": "AI image prompt – Gundam Model Figure input reference"
+        "alt": "AI photo prompt – Gundam Model Figure input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case46/output.jpg",
-        "alt": "AI image prompt – Gundam Model Figure output image"
+        "alt": "AI photo prompt – Gundam Model Figure output image"
       }
     ]
   },
@@ -1244,7 +1244,7 @@
     "outputImages": [
       {
         "src": "/assets/nano-banana/case47/output.jpg",
-        "alt": "AI image prompt – Hardware Exploded View output image"
+        "alt": "AI photo prompt – Hardware Exploded View output image"
       }
     ]
   },
@@ -1267,7 +1267,7 @@
     "outputImages": [
       {
         "src": "/assets/nano-banana/case48/output.jpg",
-        "alt": "AI image prompt – Food Calorie Annotation output image"
+        "alt": "AI photo prompt – Food Calorie Annotation output image"
       }
     ]
   },
@@ -1291,13 +1291,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case49/input.jpg",
-        "alt": "AI image prompt – Extract Subject and Place on Transparent Layer input reference"
+        "alt": "AI photo prompt – Extract Subject and Place on Transparent Layer input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case49/output.jpg",
-        "alt": "AI image prompt – Extract Subject and Place on Transparent Layer output image"
+        "alt": "AI photo prompt – Extract Subject and Place on Transparent Layer output image"
       }
     ]
   },
@@ -1319,13 +1319,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case50/input.jpg",
-        "alt": "AI image prompt – Image Outpainting Repair input reference"
+        "alt": "AI photo prompt – Image Outpainting Repair input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case50/output.jpg",
-        "alt": "AI image prompt – Image Outpainting Repair output image"
+        "alt": "AI photo prompt – Image Outpainting Repair output image"
       }
     ]
   },
@@ -1347,13 +1347,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case51/input.jpg",
-        "alt": "AI image prompt – Ancient Map → Historical Scene Photo input reference"
+        "alt": "AI photo prompt – Ancient Map → Historical Scene Photo input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case51/output.jpg",
-        "alt": "AI image prompt – Ancient Map → Historical Scene Photo output image"
+        "alt": "AI photo prompt – Ancient Map → Historical Scene Photo output image"
       }
     ]
   },
@@ -1375,13 +1375,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case52/input.jpg",
-        "alt": "AI image prompt – Fashion Moodboard Collage input reference"
+        "alt": "AI photo prompt – Fashion Moodboard Collage input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case52/output.jpg",
-        "alt": "AI image prompt – Fashion Moodboard Collage output image"
+        "alt": "AI photo prompt – Fashion Moodboard Collage output image"
       }
     ]
   },
@@ -1406,7 +1406,7 @@
     "outputImages": [
       {
         "src": "/assets/nano-banana/case53/output.jpg",
-        "alt": "AI image prompt – Delicate Cute Product Photo output image"
+        "alt": "AI photo prompt – Delicate Cute Product Photo output image"
       }
     ]
   },
@@ -1428,13 +1428,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case54/input.jpg",
-        "alt": "AI image prompt – Place Anime Statue in Real Life input reference"
+        "alt": "AI photo prompt – Place Anime Statue in Real Life input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case54/output.jpg",
-        "alt": "AI image prompt – Place Anime Statue in Real Life output image"
+        "alt": "AI photo prompt – Place Anime Statue in Real Life output image"
       }
     ]
   },
@@ -1456,13 +1456,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case55/input.jpg",
-        "alt": "AI image prompt – Create an Itasha Car input reference"
+        "alt": "AI photo prompt – Create an Itasha Car input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case55/output.jpg",
-        "alt": "AI image prompt – Create an Itasha Car output image"
+        "alt": "AI photo prompt – Create an Itasha Car output image"
       }
     ]
   },
@@ -1484,17 +1484,17 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case56/input.jpg",
-        "alt": "AI image prompt – Manga Composition input reference"
+        "alt": "AI photo prompt – Manga Composition input reference"
       },
       {
         "src": "/assets/nano-banana/case56/input2.jpg",
-        "alt": "AI image prompt – Manga Composition 2 input reference"
+        "alt": "AI photo prompt – Manga Composition 2 input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case56/output.jpg",
-        "alt": "AI image prompt – Manga Composition output image"
+        "alt": "AI photo prompt – Manga Composition output image"
       }
     ]
   },
@@ -1516,13 +1516,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case57/input.jpg",
-        "alt": "AI image prompt – Manga Style Conversion input reference"
+        "alt": "AI photo prompt – Manga Style Conversion input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case57/output.jpg",
-        "alt": "AI image prompt – Manga Style Conversion output image"
+        "alt": "AI photo prompt – Manga Style Conversion output image"
       }
     ]
   },
@@ -1544,13 +1544,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case58/input.jpg",
-        "alt": "AI image prompt – Isometric Holographic Wireframe input reference"
+        "alt": "AI photo prompt – Isometric Holographic Wireframe input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case58/output.jpg",
-        "alt": "AI image prompt – Isometric Holographic Wireframe output image"
+        "alt": "AI photo prompt – Isometric Holographic Wireframe output image"
       }
     ]
   },
@@ -1572,13 +1572,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case59/input.jpg",
-        "alt": "AI image prompt – Minecraft-Style Scene Generation input reference"
+        "alt": "AI photo prompt – Minecraft-Style Scene Generation input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case59/output.jpg",
-        "alt": "AI image prompt – Minecraft-Style Scene Generation output image"
+        "alt": "AI photo prompt – Minecraft-Style Scene Generation output image"
       }
     ]
   },
@@ -1618,13 +1618,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case61/input.jpg",
-        "alt": "AI image prompt – Floor Plan 3D Render input reference"
+        "alt": "AI photo prompt – Floor Plan 3D Render input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case61/output.jpg",
-        "alt": "AI image prompt – Floor Plan 3D Render output image"
+        "alt": "AI photo prompt – Floor Plan 3D Render output image"
       }
     ]
   },
@@ -1648,13 +1648,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case62/input.jpg",
-        "alt": "AI image prompt – Reset Camera Parameters input reference"
+        "alt": "AI photo prompt – Reset Camera Parameters input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case62/output.jpg",
-        "alt": "AI image prompt – Reset Camera Parameters output image"
+        "alt": "AI photo prompt – Reset Camera Parameters output image"
       }
     ]
   },
@@ -1676,13 +1676,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case63/input.jpg",
-        "alt": "AI image prompt – Create an ID Photo input reference"
+        "alt": "AI photo prompt – Create an ID Photo input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case63/output.jpg",
-        "alt": "AI image prompt – Create an ID Photo output image"
+        "alt": "AI photo prompt – Create an ID Photo output image"
       }
     ]
   },
@@ -1704,13 +1704,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case64/input.jpg",
-        "alt": "AI image prompt – Scene A6 Folding Card input reference"
+        "alt": "AI photo prompt – Scene A6 Folding Card input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case64/output.jpg",
-        "alt": "AI image prompt – Scene A6 Folding Card output image"
+        "alt": "AI photo prompt – Scene A6 Folding Card output image"
       }
     ]
   },
@@ -1768,13 +1768,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case67/input.jpg",
-        "alt": "AI image prompt – Jewelry Collection Design input reference"
+        "alt": "AI photo prompt – Jewelry Collection Design input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case67/output.jpg",
-        "alt": "AI image prompt – Jewelry Collection Design output image"
+        "alt": "AI photo prompt – Jewelry Collection Design output image"
       }
     ]
   },
@@ -1802,21 +1802,21 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case68/input.jpg",
-        "alt": "AI image prompt – Merchandise Design input reference"
+        "alt": "AI photo prompt – Merchandise Design input reference"
       },
       {
         "src": "/assets/nano-banana/case68/input.png",
-        "alt": "AI image prompt – Merchandise Design 2 input reference"
+        "alt": "AI photo prompt – Merchandise Design 2 input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case68/output.jpg",
-        "alt": "AI image prompt – Merchandise Design output image"
+        "alt": "AI photo prompt – Merchandise Design output image"
       },
       {
         "src": "/assets/nano-banana/case68/output.png",
-        "alt": "AI image prompt – Merchandise Design 2 output image"
+        "alt": "AI photo prompt – Merchandise Design 2 output image"
       }
     ]
   },
@@ -1859,7 +1859,7 @@
     "outputImages": [
       {
         "src": "/assets/nano-banana/case94/output.jpg",
-        "alt": "AI image prompt – Character-Themed Train output image"
+        "alt": "AI photo prompt – Character-Themed Train output image"
       }
     ]
   },
@@ -1881,13 +1881,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case95/input.jpg",
-        "alt": "AI image prompt – Custom Theme Park input reference"
+        "alt": "AI photo prompt – Custom Theme Park input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case95/output.jpg",
-        "alt": "AI image prompt – Custom Theme Park output image"
+        "alt": "AI photo prompt – Custom Theme Park output image"
       }
     ]
   },
@@ -1909,13 +1909,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case96/input.jpg",
-        "alt": "AI image prompt – Create Constellation Image input reference"
+        "alt": "AI photo prompt – Create Constellation Image input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case96/output.jpg",
-        "alt": "AI image prompt – Create Constellation Image output image"
+        "alt": "AI photo prompt – Create Constellation Image output image"
       }
     ]
   },
@@ -1956,7 +1956,7 @@
     "outputImages": [
       {
         "src": "/assets/nano-banana/case98/output.jpg",
-        "alt": "AI image prompt – Make a Movie Poster output image"
+        "alt": "AI photo prompt – Make a Movie Poster output image"
       }
     ]
   },
@@ -1979,7 +1979,7 @@
     "outputImages": [
       {
         "src": "/assets/nano-banana/case99/output.jpg",
-        "alt": "AI image prompt – Turn X Account into Floppy Disk output image"
+        "alt": "AI photo prompt – Turn X Account into Floppy Disk output image"
       }
     ]
   },
@@ -2001,13 +2001,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case100/input.jpg",
-        "alt": "AI image prompt – Make Reference Image Object Transparent input reference"
+        "alt": "AI photo prompt – Make Reference Image Object Transparent input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case100/output.jpg",
-        "alt": "AI image prompt – Make Reference Image Object Transparent output image"
+        "alt": "AI photo prompt – Make Reference Image Object Transparent output image"
       }
     ]
   },
@@ -2029,13 +2029,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case101/input.jpg",
-        "alt": "AI image prompt – Fisheye Peephole Illustration input reference"
+        "alt": "AI photo prompt – Fisheye Peephole Illustration input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case101/output.jpg",
-        "alt": "AI image prompt – Fisheye Peephole Illustration output image"
+        "alt": "AI photo prompt – Fisheye Peephole Illustration output image"
       }
     ]
   },
@@ -2060,7 +2060,7 @@
     "outputImages": [
       {
         "src": "/assets/nano-banana/case102/output.jpg",
-        "alt": "AI image prompt – Superhero Interior Design output image"
+        "alt": "AI photo prompt – Superhero Interior Design output image"
       }
     ]
   },
@@ -2082,13 +2082,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case103/input.jpg",
-        "alt": "AI image prompt – Custom Claw Machine input reference"
+        "alt": "AI photo prompt – Custom Claw Machine input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case103/output.jpg",
-        "alt": "AI image prompt – Custom Claw Machine output image"
+        "alt": "AI photo prompt – Custom Claw Machine output image"
       }
     ]
   },
@@ -2113,7 +2113,7 @@
     "outputImages": [
       {
         "src": "/assets/nano-banana/case104/output.jpg",
-        "alt": "AI image prompt – Typography Logo Design output image"
+        "alt": "AI photo prompt – Typography Logo Design output image"
       }
     ]
   },
@@ -2135,13 +2135,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case105/input.jpg",
-        "alt": "AI image prompt – RPG Character Status UI input reference"
+        "alt": "AI photo prompt – RPG Character Status UI input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case105/output.jpg",
-        "alt": "AI image prompt – RPG Character Status UI output image"
+        "alt": "AI photo prompt – RPG Character Status UI output image"
       }
     ]
   },
@@ -2163,13 +2163,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case106/input.jpg",
-        "alt": "AI image prompt – Convert Text Diagram to Pictograms input reference"
+        "alt": "AI photo prompt – Convert Text Diagram to Pictograms input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case106/output.jpg",
-        "alt": "AI image prompt – Convert Text Diagram to Pictograms output image"
+        "alt": "AI photo prompt – Convert Text Diagram to Pictograms output image"
       }
     ]
   },
@@ -2191,13 +2191,13 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case107/input.jpg",
-        "alt": "AI image prompt – Drawing on a Pen Display input reference"
+        "alt": "AI photo prompt – Drawing on a Pen Display input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case107/output.jpg",
-        "alt": "AI image prompt – Drawing on a Pen Display output image"
+        "alt": "AI photo prompt – Drawing on a Pen Display output image"
       }
     ]
   },
@@ -2219,17 +2219,17 @@
     "inputImages": [
       {
         "src": "/assets/nano-banana/case108/input1.jpg",
-        "alt": "AI image prompt – Create LINE Stamp Image input reference"
+        "alt": "AI photo prompt – Create LINE Stamp Image input reference"
       },
       {
         "src": "/assets/nano-banana/case108/input2.jpg",
-        "alt": "AI image prompt – Create LINE Stamp Image 2 input reference"
+        "alt": "AI photo prompt – Create LINE Stamp Image 2 input reference"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case108/output.jpg",
-        "alt": "AI image prompt – Create LINE Stamp Image output image"
+        "alt": "AI photo prompt – Create LINE Stamp Image output image"
       }
     ]
   },
@@ -2254,7 +2254,7 @@
     "outputImages": [
       {
         "src": "/assets/nano-banana/case109/output.jpg",
-        "alt": "AI image prompt – Therapy for Childhood Self output image"
+        "alt": "AI photo prompt – Therapy for Childhood Self output image"
       }
     ]
   },
@@ -2277,7 +2277,7 @@
     "outputImages": [
       {
         "src": "/assets/nano-banana/case110/output.jpg",
-        "alt": "AI image prompt – Pixar-Style Portrait output image"
+        "alt": "AI photo prompt – Pixar-Style Portrait output image"
       }
     ]
   }

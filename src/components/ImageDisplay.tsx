@@ -82,7 +82,7 @@ function SingleImageDisplay({
         src={image.src}
         alt={image.alt}
         fill
-        style={{ objectFit: variant === 'hero' ? 'contain' : 'cover' }}
+        style={{ objectFit: 'contain' }}
         priority={priority}
         onError={handleImageError}
         onLoad={handleImageLoad}

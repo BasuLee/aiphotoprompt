@@ -21,7 +21,7 @@ export function Footer() {
     social: [
       { href: 'https://twitter.com', label: 'Twitter', icon: '𝕏' },
       { href: 'https://github.com', label: 'GitHub', icon: '🐙' },
-      { href: 'mailto:contact@example.com', label: 'Email', icon: '📧' },
+      { href: 'mailto:firenull52@gmail.com', label: 'Email', icon: '📧' },
     ],
   };
 

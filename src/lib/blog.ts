@@ -962,7 +962,7 @@ A valid notice must include identification of copyrighted work, identification o
 
 ### How to Submit a Takedown Notice
 
-Send complete notices to copyright@ai-photo-prompt.com with proper documentation.
+Send complete notices to firenull52@gmail.com with proper documentation.
 
 ### Response Timeline
 
@@ -1040,8 +1040,8 @@ We seek input from copyright holders, users, legal experts, and industry groups.
 
 ## Contact Information and Resources
 
-For copyright inquiries: copyright@ai-photo-prompt.com
-For legal matters: legal@ai-photo-prompt.com
+For copyright inquiries: firenull52@gmail.com
+For legal matters: firenull52@gmail.com
 
 We provide educational resources on copyright basics, fair use guidelines, attribution best practices, and international copyright variations.
 
@@ -1106,7 +1106,7 @@ AI生成内容的世界呈现独特的版权考虑，包括原创提示词、衍
 
 ### 如何提交下架通知
 
-将完整通知发送至copyright@ai-photo-prompt.com并提供适当文档。
+将完整通知发送至firenull52@gmail.com并提供适当文档。
 
 ### 响应时间线
 
@@ -1184,8 +1184,8 @@ AI生成内容的世界呈现独特的版权考虑，包括原创提示词、衍
 
 ## 联系信息和资源
 
-版权咨询：copyright@ai-photo-prompt.com
-法律事务：legal@ai-photo-prompt.com
+版权咨询：firenull52@gmail.com
+法律事务：firenull52@gmail.com
 
 我们提供关于版权基础、合理使用指导原则、归属最佳实践和国际版权差异的教育资源。
 
