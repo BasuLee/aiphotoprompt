@@ -18,12 +18,20 @@
       {
         "src": "/assets/nano-banana/case1/input0.jpg",
         "alt": "AI photo prompt – Illustration to Figure input reference"
+      },
+      {
+        "src": "/assets/nano-banana/case1/input.jpg",
+        "alt": "Input image for 插画变手办"
       }
     ],
     "outputImages": [
       {
         "src": "/assets/nano-banana/case1/output0.jpg",
         "alt": "AI photo prompt – Illustration to Figure output image"
+      },
+      {
+        "src": "/assets/nano-banana/case1/output.jpg",
+        "alt": "Output image for 插画变手办"
       }
     ]
   },
@@ -961,7 +969,12 @@
       "https://x.com/ZHO_ZHO_ZHO"
     ],
     "inputImages": [],
-    "outputImages": []
+    "outputImages": [
+      {
+        "src": "/assets/nano-banana/case34/case.jpg",
+        "alt": "Generated image for Reference Image Controls Character Expression"
+      }
+    ]
   },
   {
     "id": "nano-35",
@@ -979,7 +992,12 @@
       "https://x.com/ZHO_ZHO_ZHO"
     ],
     "inputImages": [],
-    "outputImages": []
+    "outputImages": [
+      {
+        "src": "/assets/nano-banana/case35/case.jpg",
+        "alt": "Generated image for Illustration Drawing Process Four-Panel"
+      }
+    ]
   },
   {
     "id": "nano-36",
@@ -997,7 +1015,12 @@
       "https://x.com/ZHO_ZHO_ZHO"
     ],
     "inputImages": [],
-    "outputImages": []
+    "outputImages": [
+      {
+        "src": "/assets/nano-banana/case36/case.jpg",
+        "alt": "Generated image for Virtual Makeup Try-On"
+      }
+    ]
   },
   {
     "id": "nano-37",
@@ -1093,7 +1116,12 @@
       "https://x.com/tapehead_Lab"
     ],
     "inputImages": [],
-    "outputImages": []
+    "outputImages": [
+      {
+        "src": "/assets/nano-banana/case40/case.jpg",
+        "alt": "Generated image for Multiple Character Poses Generation"
+      }
+    ]
   },
   {
     "id": "nano-41",
@@ -1111,7 +1139,12 @@
       "https://x.com/ZHO_ZHO_ZHO"
     ],
     "inputImages": [],
-    "outputImages": []
+    "outputImages": [
+      {
+        "src": "/assets/nano-banana/case41/case.jpg",
+        "alt": "Generated image for Product Packaging Generation"
+      }
+    ]
   },
   {
     "id": "nano-42",
@@ -1131,7 +1164,12 @@
       "https://x.com/ZHO_ZHO_ZHO"
     ],
     "inputImages": [],
-    "outputImages": []
+    "outputImages": [
+      {
+        "src": "/assets/nano-banana/case42/case.jpg",
+        "alt": "Generated image for Overlay Filter/Material"
+      }
+    ]
   },
   {
     "id": "nano-43",
@@ -1149,7 +1187,12 @@
       "https://x.com/ZHO_ZHO_ZHO"
     ],
     "inputImages": [],
-    "outputImages": []
+    "outputImages": [
+      {
+        "src": "/assets/nano-banana/case43/case.jpg",
+        "alt": "Generated image for Control Character Face Shape"
+      }
+    ]
   },
   {
     "id": "nano-44",
@@ -1167,7 +1210,12 @@
       "https://x.com/ZHO_ZHO_ZHO"
     ],
     "inputImages": [],
-    "outputImages": []
+    "outputImages": [
+      {
+        "src": "/assets/nano-banana/case44/case.jpg",
+        "alt": "Generated image for Lighting Control"
+      }
+    ]
   },
   {
     "id": "nano-45",
@@ -1598,7 +1646,12 @@
       "https://x.com/ZHO_ZHO_ZHO"
     ],
     "inputImages": [],
-    "outputImages": []
+    "outputImages": [
+      {
+        "src": "/assets/nano-banana/case60/case.jpg",
+        "alt": "Generated image for Apply Material Sphere to Logo"
+      }
+    ]
   },
   {
     "id": "nano-61",
@@ -1730,7 +1783,12 @@
       "https://x.com/Gdgtify"
     ],
     "inputImages": [],
-    "outputImages": []
+    "outputImages": [
+      {
+        "src": "/assets/nano-banana/case65/case.jpg",
+        "alt": "Generated image for Design a Chess Set"
+      }
+    ]
   },
   {
     "id": "nano-66",
@@ -1748,7 +1806,12 @@
       "https://x.com/fofrAI"
     ],
     "inputImages": [],
-    "outputImages": []
+    "outputImages": [
+      {
+        "src": "/assets/nano-banana/case66/case.jpg",
+        "alt": "Generated image for Split-Contrast Style Photo"
+      }
+    ]
   },
   {
     "id": "nano-67",
@@ -1935,7 +1998,12 @@
       "https://x.com/ZHO_ZHO_ZHO"
     ],
     "inputImages": [],
-    "outputImages": []
+    "outputImages": [
+      {
+        "src": "/assets/nano-banana/case97/case.jpg",
+        "alt": "Generated image for Turn Image into Phone Wallpaper"
+      }
+    ]
   },
   {
     "id": "nano-98",
