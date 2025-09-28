@@ -1,1 +1,186 @@
-import { useState, useEffect, useMemo } from 'react';\nimport { GetServerSideProps } from 'next';\nimport Head from 'next/head';\nimport { useRouter } from 'next/router';\nimport { PromptData } from '@/types';\nimport { loadPromptData, getAllCategories } from '@/lib/data';\nimport { initializeSearch, searchPrompts, filterPrompts } from '@/lib/search';\nimport { Header } from '@/components/Header';\nimport { SearchFilters } from '@/components/SearchFilters';\nimport { PromptCard } from '@/components/PromptCard';\n\ninterface HomeProps {\n  prompts: PromptData[];\n  categories: string[];\n}\n\nexport default function Home({ prompts, categories }: HomeProps) {\n  const router = useRouter();\n  const isEn = router.locale === 'en';\n  \n  const [searchTerm, setSearchTerm] = useState('');\n  const [selectedCategories, setSelectedCategories] = useState<string[]>([]);\n  const [sortBy, setSortBy] = useState<'id' | 'title' | 'model'>('id');\n\n  useEffect(() => {\n    initializeSearch(prompts);\n  }, [prompts]);\n\n  const filteredPrompts = useMemo(() => {\n    let results = searchTerm ? searchPrompts(searchTerm) : prompts;\n    return filterPrompts(results, {\n      categories: selectedCategories.length > 0 ? selectedCategories : undefined,\n      sortBy,\n    });\n  }, [prompts, searchTerm, selectedCategories, sortBy]);\n\n  const handleCategoryToggle = (category: string) => {\n    setSelectedCategories(prev => \n      prev.includes(category)\n        ? prev.filter(c => c !== category)\n        : [...prev, category]\n    );\n  };\n\n  return (\n    <>\n      <Head>\n        <title>{isEn ? 'AI Photo Prompts' : 'AI 照片提示'}</title>\n        <meta name=\"description\" content={isEn ? 'Professional photography prompts for AI image generation' : '专业的 AI 图像生成摄影提示词'} />\n      </Head>\n\n      <div className=\"min-h-screen bg-gray-100\">\n        <Header />\n        \n        <main className=\"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8\">\n          <div className=\"mb-8\">\n            <h1 className=\"text-3xl font-bold text-gray-900 mb-4\">\n              {isEn ? 'AI Photo Prompts' : 'AI 照片提示'}\n            </h1>\n            <p className=\"text-gray-600\">\n              {isEn \n                ? 'Discover professional photography prompts for AI image generation'\n                : '发现专业的 AI 图像生成摄影提示词'\n              }\n            </p>\n          </div>\n\n          <div className=\"grid grid-cols-1 lg:grid-cols-4 gap-8\">\n            <div className=\"lg:col-span-1\">\n              <SearchFilters\n                searchTerm={searchTerm}\n                onSearchChange={setSearchTerm}\n                categories={categories}\n                selectedCategories={selectedCategories}\n                onCategoryToggle={handleCategoryToggle}\n                sortBy={sortBy}\n                onSortChange={setSortBy}\n              />\n            </div>\n            \n            <div className=\"lg:col-span-3\">\n              <div className=\"mb-4 flex justify-between items-center\">\n                <p className=\"text-gray-600\">\n                  {isEn \n                    ? `${filteredPrompts.length} prompts found`\n                    : `找到 ${filteredPrompts.length} 个提示词`\n                  }\n                </p>\n              </div>\n              \n              <div className=\"grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6\">\n                {filteredPrompts.map((prompt) => (\n                  <PromptCard key={prompt.id} prompt={prompt} />\n                ))}\n              </div>\n              \n              {filteredPrompts.length === 0 && (\n                <div className=\"text-center py-12\">\n                  <p className=\"text-gray-500\">\n                    {isEn \n                      ? 'No prompts found. Try adjusting your search or filters.'\n                      : '未找到提示词。请尝试调整搜索或筛选条件。'\n                    }\n                  </p>\n                </div>\n              )}\n            </div>\n          </div>\n        </main>\n      </div>\n    </>\n  );\n}\n\nexport const getServerSideProps: GetServerSideProps = async () => {\n  try {\n    const prompts = await loadPromptData();\n    const categories = getAllCategories(prompts);\n    \n    return {\n      props: {\n        prompts,\n        categories,\n      },\n    };\n  } catch (error) {\n    console.error('Error loading prompt data:', error);\n    return {\n      props: {\n        prompts: [],\n        categories: [],\n      },\n    };\n  }\n};"
+import { useState, useEffect, useMemo } from 'react';
+import { GetServerSideProps } from 'next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useRouter } from 'next/router';
+import { useTranslation } from 'next-i18next';
+import { PromptData } from '@/types';
+import { loadPromptDataByLocale, getAllCategories } from '@/lib/data';
+import { initializeSearch, searchPrompts, filterPrompts } from '@/lib/search';
+import { SearchFilters } from '@/components/SearchFilters';
+import { PromptCard } from '@/components/PromptCard';
+import { SEO, createWebsiteJsonLd } from '@/components/SEO';
+
+interface HomeProps {
+  prompts: PromptData[];
+  categories: string[];
+}
+
+export default function Home({ prompts, categories }: HomeProps) {
+  const router = useRouter();
+  const isEn = router.locale === 'en';
+  const { t } = useTranslation('common');
+  
+  const [searchTerm, setSearchTerm] = useState('');
+  const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
+  const [sortBy, setSortBy] = useState<'id' | 'title' | 'model'>('id');
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (prompts && prompts.length > 0) {
+      setIsLoading(true);
+      setError(null);
+      try {
+        initializeSearch(prompts);
+      } catch (err) {
+        setError(t('errors.searchInitFailed'));
+      } finally {
+        setIsLoading(false);
+      }
+    }
+  }, [prompts, isEn]);
+
+  const filteredPrompts = useMemo(() => {
+    let results = searchTerm ? searchPrompts(searchTerm) : prompts;
+    return filterPrompts(results, {
+      categories: selectedCategories.length > 0 ? selectedCategories : undefined,
+      sortBy,
+    });
+  }, [prompts, searchTerm, selectedCategories, sortBy]);
+
+  const handleCategoryToggle = (category: string) => {
+    setSelectedCategories(prev => 
+      prev.includes(category)
+        ? prev.filter(c => c !== category)
+        : [...prev, category]
+    );
+  };
+
+  return (
+    <>
+      <SEO
+        title={t('home.seoTitle')}
+        description={t('home.seoDescription', { count: filteredPrompts.length })}
+        jsonLd={createWebsiteJsonLd(router.locale || 'en')}
+      />
+
+      <div className="bg-gradient-to-br from-gray-50 via-white to-gray-100">        
+        <div className="max-w-[2000px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          {/* Hero Section */}
+          <div className="mb-12 text-center">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              {t('home.title')}
+            </h1>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              {t('home.subtitle')}
+            </p>
+          </div>
+
+          {/* Error State */}
+          {error && (
+            <div className="mb-8 p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg">
+              {error}
+            </div>
+          )}
+
+          {/* Main Content Layout */}
+          <div className="flex flex-col xl:flex-row gap-8">
+            {/* Sidebar Filters - Hidden on mobile, shown in sidebar on xl+ */}
+            <div className="hidden xl:block xl:w-80 xl:flex-shrink-0">
+              <div className="sticky top-8">
+                <SearchFilters
+                  searchTerm={searchTerm}
+                  onSearchChange={setSearchTerm}
+                  categories={categories}
+                  selectedCategories={selectedCategories}
+                  onCategoryToggle={handleCategoryToggle}
+                  sortBy={sortBy}
+                  onSortChange={setSortBy}
+                />
+              </div>
+            </div>
+
+            {/* Mobile Filters - Shown on mobile/tablet, hidden on xl+ */}
+            <div className="xl:hidden mb-6">
+              <SearchFilters
+                searchTerm={searchTerm}
+                onSearchChange={setSearchTerm}
+                categories={categories}
+                selectedCategories={selectedCategories}
+                onCategoryToggle={handleCategoryToggle}
+                sortBy={sortBy}
+                onSortChange={setSortBy}
+              />
+            </div>
+            
+            {/* Content Area */}
+            <div className="flex-1 min-w-0">
+              {/* Results Count */}
+              <div className="mb-6 flex justify-between items-center">
+                <p className="text-gray-600 text-lg">
+                  {t('home.promptsFound', { count: filteredPrompts.length })}
+                </p>
+              </div>
+              
+              {/* Loading State */}
+              {isLoading && (
+                <div className="text-center py-12">
+                  <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
+                  <p className="mt-4 text-gray-500">
+                    {t('home.loading')}
+                  </p>
+                </div>
+              )}
+              
+              {/* Grid Layout - Responsive columns */}
+              {!isLoading && (
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-8">
+                  {filteredPrompts.map((prompt) => (
+                    <PromptCard key={prompt.id} prompt={prompt} />
+                  ))}
+                </div>
+              )}
+              
+              {/* Empty State */}
+              {!isLoading && filteredPrompts.length === 0 && (
+                <div className="text-center py-16">
+                  <div className="text-6xl mb-4">🔍</div>
+                  <h3 className="text-xl font-semibold text-gray-700 mb-2">
+                    {t('home.noPromptsFound')}
+                  </h3>
+                  <p className="text-gray-500 max-w-md mx-auto">
+                    {t('home.noPromptsDesc')}
+                  </p>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
+
+export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
+  try {
+    const prompts = await loadPromptDataByLocale(locale || 'en');
+    const categories = getAllCategories(prompts);
+    
+    return {
+      props: {
+        prompts,
+        categories,
+        ...(await serverSideTranslations(locale || 'en', ['common'])),
+      },
+    };
+  } catch (error) {
+    console.error('Error loading prompt data:', error);
+    return {
+      props: {
+        prompts: [],
+        categories: [],
+        ...(await serverSideTranslations(locale || 'en', ['common'])),
+      },
+    };
+  }
+};

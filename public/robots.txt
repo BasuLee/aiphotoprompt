@@ -1,0 +1,31 @@
+# Robots.txt for AI Photo Prompts
+# Generated for https://ai-photo-prompt.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://ai-photo-prompt.com/sitemap.xml
+
+# Disallow specific paths (if any)
+# Disallow: /api/
+# Disallow: /_next/
+
+# Allow popular search engine crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+# Crawl delay for all bots
+Crawl-delay: 1
