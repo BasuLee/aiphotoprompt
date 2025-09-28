@@ -13,6 +13,7 @@ export function PromptCard({ prompt }: PromptCardProps) {
   const router = useRouter();
   const isEn = router.locale === 'en';
   const { t } = useTranslation('common');
+  const detailHref = `/prompt/${prompt.slug || prompt.id}/`;
 
   // 翻译分类名称
   const translateCategory = (category: string) => {
@@ -29,7 +30,7 @@ export function PromptCard({ prompt }: PromptCardProps) {
     <div className="group bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:border-gray-200 transition-all duration-300 transform hover:-translate-y-1">
       {/* 图片显示区域 */}
       {prompt.outputImages && prompt.outputImages.length > 0 && (
-        <div className="relative h-56 w-full overflow-hidden">
+        <Link href={detailHref} className="relative block h-56 w-full overflow-hidden">
           <ImageDisplay
             images={[{
               ...prompt.outputImages[0],
@@ -40,7 +41,7 @@ export function PromptCard({ prompt }: PromptCardProps) {
             showFirst={true}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-        </div>
+        </Link>
       )}
       
       <div className="p-6">
@@ -81,7 +82,7 @@ export function PromptCard({ prompt }: PromptCardProps) {
 
         <div className="flex justify-between items-center pt-4 border-t border-gray-100">
           <Link
-            href={`/prompt/${prompt.slug || prompt.id}`}
+            href={detailHref}
             className="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-semibold group-hover:text-blue-700 transition-colors"
             onClick={(e) => {
               console.log('Link clicked:', prompt.slug || prompt.id, prompt.title);

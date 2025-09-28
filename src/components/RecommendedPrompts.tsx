@@ -197,7 +197,7 @@ function RecommendedPromptCard({ prompt, isEn }: RecommendedPromptCardProps) {
 
       <div className="flex justify-between items-center">
         <Link
-          href={`/prompt/${prompt.slug || prompt.id}`}
+          href={`/prompt/${prompt.slug || prompt.id}/`}
           className="text-blue-600 hover:text-blue-800 text-sm font-medium group-hover:underline"
           onClick={(e) => {
             console.log('Recommended prompt link clicked:', prompt.slug || prompt.id, prompt.title);

@@ -12,6 +12,22 @@
 
 -----
 
+## 现有模块概览
+
+| 模块 | 位置 | 责任说明 |
+| :--- | :--- | :--- |
+| 首页列表 | `src/pages/index.tsx` | 服务端按 locale 加载 `data/` JSON，初始化 FlexSearch 索引，调度 `SearchFilters` 与 `PromptCard` 实现搜索、筛选、排序与卡片网格展示。 |
+| 提示词详情 | `src/pages/prompt/[id].tsx` | 读取单条提示词，结合 `getRecommendations` 补充相关推荐，调用 `SEO` 输出 canonical、结构化数据与面包屑。 |
+| 全局布局 | `src/pages/_app.tsx`、`src/components/Layout.tsx` | 在应用层挂载 `Layout`，集中渲染 `Header`、`Footer`、多语言切换及各页面主体。 |
+| 组件库 | `src/components/` | `SearchFilters`、`PromptCard`、`CopyButton`、`RecommendedPrompts`、`ImageDisplay`、`LanguageDropdown` 等封装 UI 与交互，包括复制提示词、图片占位/错误处理、分类翻译等。 |
+| 业务逻辑库 | `src/lib/` | `data.ts` 负责数据加载与 slug 处理，`search.ts` 维护 FlexSearch，`recommendations.ts` 提供多种推荐策略，`categories.ts` 自动识别分类，`blog.ts` 保存多语言博文及 JSON-LD 工具。 |
+| 静态内容 | `data/`、`public/locales/` | `data/` 下四个 JSON 划分模型与语言，`public/locales/` 提供 i18n 词条，配合 Next.js i18n 路由实现中英双语。 |
+| 法务与信息页 | `src/pages/(blog|faq|contact|terms|privacy)` | 博客、FAQ、联系方式及合规页面全部支持 SSR 与多语言渲染，内容长度满足 SEO 需求。 |
+| API 输出 | `src/pages/api/sitemap.xml.ts` | 聚合中英文首页与提示词详情页 URL，生成多语言 sitemap 并设置缓存策略。 |
+| 类型与样式 | `src/types/index.ts`、`src/styles/globals.css` | 定义提示词、SEO 等 TypeScript 接口，集中维护 Tailwind 全局样式。 |
+
+该概览反映当前代码结构，可作为迭代需求与测试覆盖规划的基线。
+
 ## 一、核心功能模块
 
 ### 1\. 首页/示例列表展示
