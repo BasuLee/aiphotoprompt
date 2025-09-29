@@ -4,6 +4,19 @@ export default function Document() {
   return (
     <Html>
       <Head>
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-5PC2GXPBVY"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-5PC2GXPBVY');
+            `,
+          }}
+        />
+        
         {/* 基本字符集和viewport设置 */}
         <meta charSet="utf-8" />
         
@@ -18,9 +31,9 @@ export default function Document() {
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/site.webmanifest" />
         
-        {/* 主题颜色 */}
-        <meta name="theme-color" content="#3b82f6" />
-        <meta name="msapplication-TileColor" content="#3b82f6" />
+        {/* 主题颜色 - 更新为新的强调色 */}
+        <meta name="theme-color" content="#00B7EB" />
+        <meta name="msapplication-TileColor" content="#00B7EB" />
         
         {/* 安全相关 */}
         <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
