@@ -17,6 +17,10 @@ export default function Document() {
           }}
         />
         
+        {/* Google AdSense */}
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6250614423109003"
+                crossOrigin="anonymous"></script>
+        
         {/* 基本字符集和viewport设置 */}
         <meta charSet="utf-8" />
         
