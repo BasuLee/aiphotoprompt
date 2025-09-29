@@ -56,8 +56,8 @@
     "download": "下载"
   },
   "pagination": {
-    "page": "第",
-    "of": "页，共",
+    "page": "页",
+    "of": "共",
     "showing": "显示",
     "to": "至",
     "results": "条结果"

@@ -27,10 +27,10 @@ export function PromptCard({ prompt }: PromptCardProps) {
   };
 
   return (
-    <div className="group bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:border-gray-200 transition-all duration-300 transform hover:-translate-y-1">
+    <div className="group bg-card rounded-2xl shadow-sm border border-border overflow-hidden hover:shadow-xl hover:border-[hsl(var(--ai-accent))] transition-all duration-300 transform hover:-translate-y-1">
       {/* 图片显示区域 */}
       {prompt.outputImages && prompt.outputImages.length > 0 && (
-        <Link href={detailHref} className="relative block h-56 w-full overflow-hidden bg-gray-50">
+        <Link href={detailHref} className="relative block h-56 w-full overflow-hidden bg-secondary">
           <ImageDisplay
             images={[{
               ...prompt.outputImages[0],
@@ -47,13 +47,13 @@ export function PromptCard({ prompt }: PromptCardProps) {
       <div className="p-6">
         <div className="flex justify-between items-start mb-4">
           <div className="flex-1">
-            <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors line-clamp-2">
+            <h3 className="text-xl font-bold text-[hsl(var(--header-color))] mb-2 group-hover:text-[hsl(var(--ai-accent))] transition-colors line-clamp-2">
               {prompt.title}
             </h3>
-            <div className="flex items-center gap-3 text-sm text-gray-500">
-              <span className="bg-gray-100 px-2 py-1 rounded-md font-medium">#{prompt.caseNumber}</span>
+            <div className="flex items-center gap-3 text-sm text-muted-foreground">
+              <span className="bg-secondary px-2 py-1 rounded-md font-medium">#{prompt.caseNumber}</span>
               <span>•</span>
-              <span className="bg-blue-50 text-blue-600 px-2 py-1 rounded-md font-medium">{prompt.model}</span>
+              <span className="bg-[hsl(var(--ai-accent))]/10 text-[hsl(var(--ai-accent))] px-2 py-1 rounded-md font-medium">{prompt.model}</span>
             </div>
           </div>
         </div>
@@ -63,27 +63,27 @@ export function PromptCard({ prompt }: PromptCardProps) {
             {prompt.categories.slice(0, 3).map((category) => (
               <span
                 key={category}
-                className="px-3 py-1 text-xs bg-gray-50 text-gray-600 rounded-full border border-gray-200"
+                className="px-3 py-1 text-xs bg-secondary text-secondary-foreground rounded-full border border-border hover:bg-[hsl(var(--ai-accent))]/10 hover:text-[hsl(var(--ai-accent))] transition-colors"
               >
                 {translateCategory(category)}
               </span>
             ))}
             {prompt.categories.length > 3 && (
-              <span className="px-3 py-1 text-xs text-gray-400 rounded-full">
+              <span className="px-3 py-1 text-xs text-muted-foreground rounded-full">
                 +{prompt.categories.length - 3}
               </span>
             )}
           </div>
         )}
 
-        <p className="text-gray-600 text-sm mb-6 line-clamp-3 leading-relaxed">
+        <p className="text-foreground/80 text-sm mb-6 line-clamp-3 leading-relaxed">
           {prompt.description || prompt.prompt}
         </p>
 
-        <div className="flex justify-between items-center pt-4 border-t border-gray-100">
+        <div className="flex justify-between items-center pt-4 border-t border-border">
           <Link
             href={detailHref}
-            className="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-semibold group-hover:text-blue-700 transition-colors"
+            className="inline-flex items-center text-[hsl(var(--ai-accent))] hover:text-[hsl(var(--ai-accent))]/80 text-sm font-semibold group-hover:text-[hsl(var(--ai-accent))]/90 transition-colors"
             onClick={(e) => {
               console.log('Link clicked:', prompt.slug || prompt.id, prompt.title);
             }}

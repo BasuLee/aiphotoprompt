@@ -21,11 +21,11 @@ export function Header() {
   };
 
   return (
-    <header className="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
+    <header className="bg-card shadow-sm border-b border-border sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link href="/" className="text-2xl font-bold text-gray-900 hover:text-blue-600 transition-colors">
+          <Link href="/" className="text-2xl font-bold text-[hsl(var(--header-color))] hover:text-[hsl(var(--ai-accent))] transition-colors">
             {t('nav.siteName')}
           </Link>
           
@@ -37,13 +37,13 @@ export function Header() {
                 href={item.href}
                 className={`text-base font-medium transition-colors relative py-2 ${
                   router.asPath === item.href
-                    ? 'text-blue-600'
-                    : 'text-gray-700 hover:text-blue-600'
+                    ? 'text-[hsl(var(--ai-accent))]'
+                    : 'text-foreground hover:text-[hsl(var(--ai-accent))]'
                 }`}
               >
                 {item.label}
                 {router.asPath === item.href && (
-                  <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-blue-600 rounded-full"></span>
+                  <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-[hsl(var(--ai-accent))] rounded-full"></span>
                 )}
               </Link>
             ))}
@@ -57,7 +57,7 @@ export function Header() {
             {/* Mobile Menu Button */}
             <button
               onClick={toggleMenu}
-              className="md:hidden p-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"
+              className="md:hidden p-2 text-foreground hover:text-[hsl(var(--ai-accent))] hover:bg-secondary rounded-lg transition-colors"
               aria-label="Toggle menu"
             >
               <svg
@@ -88,7 +88,7 @@ export function Header() {
 
         {/* Mobile Navigation Menu */}
         {isMenuOpen && (
-          <div className="md:hidden border-t border-gray-200 py-4">
+          <div className="md:hidden border-t border-border py-4">
             <nav className="flex flex-col space-y-2">
               {navItems.map((item) => (
                 <Link
@@ -96,8 +96,8 @@ export function Header() {
                   href={item.href}
                   className={`px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
                     router.asPath === item.href
-                      ? 'text-blue-600 bg-blue-50'
-                      : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
+                      ? 'text-[hsl(var(--ai-accent))] bg-[hsl(var(--ai-accent))]/10'
+                      : 'text-foreground hover:text-[hsl(var(--ai-accent))] hover:bg-secondary'
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
