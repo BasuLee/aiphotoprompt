@@ -1,4 +1,4 @@
-import { GetServerSideProps } from 'next';
+import { GetStaticProps, GetStaticPaths } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
@@ -495,18 +495,51 @@ export default function PromptDetail({ prompt, recommendations }: PromptDetailPr
   );
 }
 
-export const getServerSideProps: GetServerSideProps = async ({ params, locale }) => {
+export const getStaticPaths: GetStaticPaths = async () => {
+  try {
+    // 为所有语言生成路径
+    const locales = ['en', 'zh'];
+    const paths = [];
+
+    for (const locale of locales) {
+      const prompts = await loadPromptDataByLocale(locale);
+      for (const prompt of prompts) {
+        // 同时支持 slug 和 id 两种路径
+        paths.push({
+          params: { id: prompt.slug || prompt.id },
+          locale,
+        });
+        // 如果 slug 和 id 不同，为 id 也生成路径
+        if (prompt.slug && prompt.slug !== prompt.id) {
+          paths.push({
+            params: { id: prompt.id },
+            locale,
+          });
+        }
+      }
+    }
+
+    return {
+      paths,
+      fallback: false, // 404 for non-existent paths
+    };
+  } catch (error) {
+    console.error('Error generating static paths:', error);
+    return {
+      paths: [],
+      fallback: false,
+    };
+  }
+};
+
+export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
   try {
     const prompts = await loadPromptDataByLocale(locale || 'en');
     const prompt = prompts.find(p => p.id === params?.id || p.slug === params?.id);
     
     if (!prompt) {
       return {
-        props: {
-          prompt: null,
-          recommendations: [],
-          ...(await serverSideTranslations(locale || 'en', ['common'])),
-        },
+        notFound: true,
       };
     }
 
@@ -518,15 +551,13 @@ export const getServerSideProps: GetServerSideProps = async ({ params, locale })
         recommendations,
         ...(await serverSideTranslations(locale || 'en', ['common'])),
       },
+      // 重新生成间隔：每天重新生成一次
+      revalidate: 86400, // 24 hours
     };
   } catch (error) {
     console.error('Error loading prompt:', error);
     return {
-      props: {
-        prompt: null,
-        recommendations: [],
-        ...(await serverSideTranslations(locale || 'en', ['common'])),
-      },
+      notFound: true,
     };
   }
 };
